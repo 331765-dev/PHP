@@ -1,0 +1,17 @@
+{
+    "name": "PHP",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "user": "ubuntu",
+    "install": "composer install --no-interaction --no-progress",
+    "terminals": [
+        {
+            "name": "php-dev-server",
+            "command": "php -S 0.0.0.0:8000 -t public"
+        }
+    ],
+    "ports": [
+        8000
+    ]
+}
